@@ -13,8 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install and Build 🔧
-        run: |
-          yarn build
+        run: yarn build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
