@@ -79,7 +79,7 @@ export const StyledShadowOverlap = styled(Box)(({theme})=>({
     position: `absolute`,
     width: `100%`,
     bottom: 0,
-    height: `80%`,
-    background: `linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0))`,
+    height: `100%`,
+    background: `linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0))`,
     zIndex: `10`,
 }))
