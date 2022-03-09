@@ -60,6 +60,7 @@ export const StyledRaitingIcon = styled(Star)(()=>({
     width: `18px`,
     color: `#e5e5e5`,
     zIndex: `15`,
+    marginBottom: `5px`, 
 }))
 
 export const StyledHorizontalStack = styled(Stack)(()=>({
