@@ -1,26 +1,11 @@
-import { Box,styled,Stack } from '@mui/material'
+import { Box, styled } from '@mui/material'
 
 
 export const StyledRoot = styled(Box)(({theme}) => ({
-    [theme.breakpoints.up('sm')]: {
-        position: `absolute`,
-        top: `0`,
-        left: `0`,
-        right: `0`,
-        bottom: `0`,
-        margin: `auto`,
-        width: `384px`,
-        height: `576px`,
-        borderRadius: `16px`,
-
-    },
     width:`100vw`,
     height: `100vh`,
-    display: `flex`,
-    flexFlow: 'row nowrap',
-    justifyContent: `center`,
-    alignItems: `center`,
-
+    position: "relative",
+    overflow: "hidden",
 }));
 
 export const StyledBackground = styled(`img`)(({theme})=> ({
@@ -28,17 +13,11 @@ export const StyledBackground = styled(`img`)(({theme})=> ({
         display: `none`
     },
     position: `absolute`,
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
     width: `110vw`,
     height: `auto`,
     WebkitFilter: `blur(16px)`,
     zIndex: '0',
-}))
-
-export const StyledWrapper = styled(Stack)(()=> ({
-    display: `flex`,
-    flexFlow: `row nowrap`,
-    justifyContent: `space-around`,
-    alignSelf: `flex-end`,
-    marginBottom: `24px`,
-    width: `60%`,
 }))

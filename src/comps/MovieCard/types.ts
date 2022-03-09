@@ -6,5 +6,8 @@ export interface MovieCardComponentProps extends CardProps {
     * Contains data that needs to be displayed in MovieCard Component.
     */
     data: IMovie
+
+    incrementIndex: () => void;
+    index: number;
 }
 
